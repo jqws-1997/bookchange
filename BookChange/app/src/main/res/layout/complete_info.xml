@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#3F51B5">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:text="返回"
+            android:textColor="@drawable/button_head_back"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="信息完善"
+            android:layout_marginLeft="70dip"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/copy_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="20.0dp"
+                android:text="姓名"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/name_text"
+                android:layout_width="fill_parent"
+                android:layout_height="46dip"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/copy_name_text"
+                android:background="@null"
+                android:hint="请输入您的姓名"
+                android:inputType="text"
+                android:maxLength="16"
+                android:textSize="17sp"
+                android:imeOptions="actionDone"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/sex_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="20.0dp"
+                android:text="性别"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_toRightOf="@+id/sex_text"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/sex_man_Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dip"
+                    android:background="@drawable/layout_login_selector"
+                    android:text="男"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/sex_woman_Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="80dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dip"
+                    android:text="女"
+                    android:textSize="17sp" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+        <Switch
+            android:id="@+id/love_switch"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:background="@android:color/white"
+            android:paddingLeft="20dip"
+            android:paddingRight="80dp"
+            android:text="恋爱状态"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:background="@android:color/white">
+
+
+            <TextView
+                android:id="@+id/copy_hobby_text"
+                android:layout_width="wrap_content"
+                android:layout_height="46dip"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="20dp"
+                android:text="爱好"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/hobby_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:paddingLeft="20dp"
+                android:layout_toRightOf="@+id/copy_hobby_text"
+                android:hint="请输入您的爱好"
+                android:textCursorDrawable="@null"
+                android:inputType="textMultiLine"
+                android:textSize="17sp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+        <LinearLayout
+            android:id="@+id/select_age"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/layout_login_selector"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="生日"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/activities_view_age"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:gravity="center_vertical|right"
+                android:paddingRight="15dip"
+                android:text="年龄："
+                android:textColor="#ffc0c3c4"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+        <LinearLayout
+            android:id="@+id/select_address"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/layout_login_selector"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="地区"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/activities_view_address"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:gravity="center_vertical|right"
+                android:paddingRight="15dip"
+                android:text=""
+                android:textColor="#ffc0c3c4"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

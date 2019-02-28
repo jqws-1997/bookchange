@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#3F51B5">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="15dip"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="TA的资料"
+            android:layout_marginLeft="70dip"
+            android:textColor="#FFFFFF"
+            android:textSize="18dip"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="9dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="1.0px"
+        android:layout_marginRight="1.0px"
+        android:background="#ffc0c3c4" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dip"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/friend_photo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dip"
+            android:layout_gravity="center_vertical"
+            android:background="#bfbfbf"
+            android:scaleType="centerCrop"
+            android:src="@drawable/friend"/>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip">
+
+            <TextView
+                android:id="@+id/friend_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称："
+                android:layout_gravity="left"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"/>
+
+
+            <TextView
+                android:id="@+id/friend_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="个性签名："
+                android:layout_gravity="left"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="1.0px"
+        android:layout_marginRight="1.0px"
+        android:background="#ffc0c3c4" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="1.0px"
+        android:layout_marginRight="1.0px"
+        android:background="#ffc0c3c4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/friend_books"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:paddingLeft="20dp"
+            android:gravity="center_horizontal|center_vertical|left"
+            android:text="他的藏书"
+            android:background="@drawable/layout_login_selector"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_marginLeft="1.0px"
+        android:layout_marginRight="1.0px"
+        android:background="#ffc0c3c4" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+
+    <TextView
+        android:id="@+id/send_message"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:background="#3366CC"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="发送消息"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+
+
+</LinearLayout>

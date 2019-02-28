@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#3F51B5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:text="我"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/new_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal|right"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_message_blue"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/my_photo_button"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_login_selector">
+
+            <ImageView
+                android:id="@+id/my_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dip"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/f1"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dip">
+
+                <TextView
+                    android:id="@+id/my_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dip"
+                    android:text="昵称："
+                    android:layout_gravity="left"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"/>
+
+
+                <TextView
+                    android:id="@+id/my_introduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dip"
+                    android:text="个性签名："
+                    android:layout_gravity="left"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/complet_info"
+                android:layout_width="fill_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/layout_login_selector"
+                android:gravity="center_horizontal|center_vertical|left"
+                android:paddingLeft="20dp"
+                android:text="信息完善"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="1.0px"
+                android:layout_marginRight="1.0px"
+                android:background="#ffc0c3c4" />
+
+            <TextView
+                android:id="@+id/complet_bookname"
+                android:layout_width="fill_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/layout_login_selector"
+                android:gravity="center_horizontal|center_vertical|left"
+                android:paddingLeft="20dp"
+                android:text="书名完善"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="1.0px"
+                android:layout_marginRight="1.0px"
+                android:background="#ffc0c3c4" />
+
+            <TextView
+                android:id="@+id/my_reading"
+                android:layout_width="fill_parent"
+                android:layout_height="46dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_horizontal|center_vertical|left"
+                android:text="正在读"
+                android:background="@drawable/layout_login_selector"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="1.0px"
+                android:layout_marginRight="1.0px"
+                android:background="#ffc0c3c4" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+            <TextView
+                android:id="@+id/setting_button"
+                android:layout_width="fill_parent"
+                android:layout_height="46dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_horizontal|center_vertical|left"
+                android:text="设置"
+                android:background="@drawable/layout_login_selector"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="1.0px"
+                android:layout_marginRight="1.0px"
+                android:background="#ffc0c3c4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="1.0px"
+                android:layout_marginRight="1.0px"
+                android:background="#ffc0c3c4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/customer_service"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_horizontal|center_vertical|left"
+                android:text="客服中心"
+                android:background="@drawable/layout_login_selector"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_marginLeft="1.0px"
+                android:layout_marginRight="1.0px"
+                android:background="#ffc0c3c4" />
+
+            <TextView
+                android:id="@+id/about_us"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_horizontal|center_vertical|left"
+                android:text="关于"
+                android:background="@drawable/layout_login_selector"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
